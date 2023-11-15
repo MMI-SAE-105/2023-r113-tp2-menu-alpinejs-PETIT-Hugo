@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen: false}">
+<html lang="en" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
 
-</html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,6 +22,11 @@
       .header_menu_Btn {
         position: relative;
         z-index: 10;
+      }
+
+      .noscroll,
+      .noscroll body {
+        overflow: hidden;
       }
 
     </style>
