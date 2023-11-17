@@ -1,0 +1,18 @@
+.media--fullwidth {
+    width: 100%;
+    height: auto;
+}
+
+header>h1::before {
+    content: url("../../public/icones/book.svg");
+}
+
+nav>ul>li::before {
+    content: url("../../public/icones/bag-plus.svg");
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
