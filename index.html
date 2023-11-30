@@ -25,6 +25,10 @@
         z-index: 10;
       }
 
+      .menu__menuBtn {
+        margin: 10px;
+      }
+
       .noscroll,
       .noscroll body {
         overflow: hidden;
@@ -53,6 +57,10 @@
         <ul>
           <li><a href="cats/index.html">Accueil des chats</a></li>
           <li><a href="dogs/index.html">Accueil des chiens</a></li>
+          
+          <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuBtn">
+            Fermer 
+          </button>
         </ul>
       </nav>
     </header>
